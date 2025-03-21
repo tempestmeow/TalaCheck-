@@ -7,6 +7,7 @@
 
 .page {
   padding: 1rem 1.8rem;
+  display: flex;
 }
 
 /* HEADER */
@@ -15,6 +16,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
+  width: 100%;
+  gap: 2rem;
 }
 
 .header-left {
@@ -40,4 +44,52 @@
   padding: 1rem 2rem;
   border: 1px solid black;
   border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .header-software {
+    display: none;
+  }
+
+  .header-right {
+    gap: 1rem;
+  }
+
+  .header-contact {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .page {
+    padding: 0.5rem 0.9rem;
+  }
+
+  .header-mission {
+    display: none;
+  }
+
+  .header-right {
+    gap: 1rem;
+  }
+
+  .header-contact {
+    padding: 0.5rem 1rem;
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .tala-icon {
+    width: 11.714vw;
+    height: 11.714vw;
+  }
+
+  .app-title {
+    font-size: 6.571vw;
+  }
+
+  .header-right {
+    font-size: 4.5vw;
+  }
 }
