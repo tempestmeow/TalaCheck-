@@ -22,26 +22,6 @@ export default function Home() {
             <MissionIcon />
           </div>
         </div>
-        <div className="companies-block">
-          <div className="icon-container">
-            <img src="/images/PDI.jpg" alt="PDI" />
-          </div>
-          <div className="icon-container">
-            <img src="/images/PDI.jpg" alt="PDI" />
-          </div>
-          <div className="icon-container">
-            <img src="/images/PDI.jpg" alt="PDI" />
-          </div>
-          <div className="icon-container">
-            <img src="/images/PDI.jpg" alt="PDI" />
-          </div>
-          <div className="icon-container">
-            <img src="/images/PDI.jpg" alt="PDI" />
-          </div>
-          <div className="icon-container">
-            <img src="/images/PDI.jpg" alt="PDI" />
-          </div>
-        </div>
         <div className="software-block"></div>
       </div>
     </>
