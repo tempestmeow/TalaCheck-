@@ -1,10 +1,12 @@
 import Image from "next/image";
 import "./global.css";
-
+import Header from "@/components/Header";
 export default function Home() {
   return (
     <>
-      <div>Checking</div>
+      <div>
+        <Header />
+      </div>
     </>
   );
 }
