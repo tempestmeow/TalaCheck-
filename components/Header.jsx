@@ -6,7 +6,12 @@ export default function Header() {
         <TalaIcon />
         <a className="app-title">TalaCheck</a>
       </div>
-      <div className="header-right"></div>
+      <div className="header-right">
+        <a className="header-about">About us</a>
+        <a className="header-software">Software</a>
+        <a className="header-mission">Mission</a>
+        <a className="header-contact">Contact us</a>
+      </div>
     </div>
   );
 }

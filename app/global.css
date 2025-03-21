@@ -5,15 +5,39 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+.page {
+  padding: 1rem 1.8rem;
+}
+
 /* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .header-left {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .app-title {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 26px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 2rem;
+}
+
+.header-contact {
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 15px;
 }
