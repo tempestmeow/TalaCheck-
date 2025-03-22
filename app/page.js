@@ -212,10 +212,10 @@ export default function Home() {
                 </div>
                 {problemToggle2 && (
                   <div className="problem-bottom">
-                    Fake news spreads false or misleading information, deepening
-                    political divides. It fuels distrust, reinforces biases, and
-                    manipulates public perception through social media
-                    algorithms and disinformation campaigns.
+                    Misinformation influences elections, policymaking, and
+                    public discourse. It erodes trust in institutions, incites
+                    social conflict, and contributes to the radicalization of
+                    political groups, weakening democratic processes.
                   </div>
                 )}
               </div>
@@ -257,10 +257,10 @@ export default function Home() {
                 </div>
                 {problemToggle3 && (
                   <div className="problem-bottom">
-                    Fake news spreads false or misleading information, deepening
-                    political divides. It fuels distrust, reinforces biases, and
-                    manipulates public perception through social media
-                    algorithms and disinformation campaigns.
+                    Psychological factors like confirmation bias, the bandwagon
+                    effect, and filter bubbles make individuals more susceptible
+                    to fake news, while media literacy is crucial for critical
+                    information consumption.
                   </div>
                 )}
               </div>
