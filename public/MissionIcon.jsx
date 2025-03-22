@@ -1,4 +1,4 @@
-export default function MissionIcon() {
+export default function MissionIcon({ className }) {
   return (
     <>
       <svg
@@ -10,7 +10,7 @@ export default function MissionIcon() {
         role="img"
         artist="Katerina Limpitsouni"
         source="https://undraw.co/"
-        className="mission-icon"
+        className={className}
       >
         <circle cx="452.81963" cy="117.45604" r="53.51916" fill="#66D9FF" />
         <path
