@@ -101,7 +101,13 @@ export default function Home() {
               </span>
             </div>
             <div className="problem-list">
-              <div className="problem-item">
+              <div
+                className={
+                  !problemToggle1
+                    ? "problem-item"
+                    : "problem-item problem-item-toggled"
+                }
+              >
                 <div
                   className={
                     !problemToggle1
@@ -140,7 +146,13 @@ export default function Home() {
                   </div>
                 )}
               </div>
-              <div className="problem-item">
+              <div
+                className={
+                  !problemToggle2
+                    ? "problem-item"
+                    : "problem-item problem-item-toggled"
+                }
+              >
                 <div
                   className={
                     !problemToggle2
@@ -177,7 +189,13 @@ export default function Home() {
                   </div>
                 )}
               </div>
-              <div className="problem-item">
+              <div
+                className={
+                  !problemToggle3
+                    ? "problem-item"
+                    : "problem-item problem-item-toggled"
+                }
+              >
                 <div
                   className={
                     !problemToggle3
