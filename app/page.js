@@ -18,6 +18,7 @@ export default function Home() {
                 users verify information and identify misinformation in the
                 Philippines.
               </span>
+              <span className="mission-link">Try our site</span>
             </div>
             <MissionIcon />
           </div>

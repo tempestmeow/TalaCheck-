@@ -133,6 +133,7 @@ body {
   max-width: 31vw;
   min-width: 300px;
   gap: 1rem;
+  margin-left: 1.5rem;
 }
 
 .mission-text {
@@ -154,6 +155,7 @@ body {
 @media (max-width: 768px) {
   .mission-left {
     max-width: 400px;
+    margin-left: unset;
   }
 
   .mission-text {
@@ -176,4 +178,12 @@ body {
     min-height: 300px;
     max-height: 300px;
   }
+}
+
+.mission-link {
+  padding: 1rem 2rem;
+  color: white;
+  background-color: black;
+  width: max-content;
+  border-radius: 20px;
 }

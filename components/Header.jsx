@@ -8,8 +8,8 @@ export default function Header() {
       </div>
       <div className="header-right">
         <a className="header-about">About us</a>
-        <a className="header-software">Software</a>
         <a className="header-mission">Mission</a>
+        <a className="header-software">Software</a>
         <a className="header-contact">Contact us</a>
       </div>
     </div>

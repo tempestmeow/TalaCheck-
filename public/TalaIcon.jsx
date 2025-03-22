@@ -13,7 +13,7 @@ export default function TalaIcon() {
       <g
         id="SVGRepo_tracerCarrier"
         strokeLinecap="round"
-        strokeLineJoin="round"
+        strokeLinejoin="round"
       />
 
       <g id="SVGRepo_iconCarrier">
