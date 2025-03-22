@@ -1,8 +1,7 @@
 "use client";
 
 import React from "react";
-import { useState } from "react";
-import Image from "next/image";
+import { useState, useRef } from "react";
 import "./global.css";
 import Header from "@/components/Header";
 import OCR from "@/public/OCR";
@@ -13,15 +12,26 @@ import NewsIcon from "@/public/NewsIcon";
 import NLP from "@/public/NLP";
 import AddIcon from "@/public/AddIcon";
 import SubtractIcon from "@/public/SubtractIcon";
+import ContactIcon from "@/public/ContactIcon";
+import ContactLogos from "@/public/ContactLogos";
+import { useScrollAnimation } from "@/components/useScrollAnimation";
 export default function Home() {
   const [problemToggle1, setProblemToggle1] = useState(false);
   const [problemToggle2, setProblemToggle2] = useState(false);
   const [problemToggle3, setProblemToggle3] = useState(false);
+  const handleScroll = (target) => {
+    const targetElement = document.querySelector(target);
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
+  useScrollAnimation();
   return (
     <>
       <div className="page">
-        <Header />
+        <Header handleScroll={handleScroll} />
         <div className="body">
           <div className="mission-block">
             <div className="mission-left">
@@ -52,30 +62,45 @@ export default function Home() {
                   <span className="software-title t1">
                     Optical Character Recognition
                   </span>
-                  <span className="learn-more-container">
+                  <a
+                    className="learn-more-container"
+                    href="https://aws.amazon.com/what-is/ocr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <LearnIcon fill1={"#66E3FF"} fill2={"#191A23"} />
                     <span className="learn-more">Learn more</span>
-                  </span>
+                  </a>
                 </div>
                 <OCR />
               </div>
               <div className="software-item s2">
                 <div className="software-left">
                   <span className="software-title t2">Fact-Checking API</span>
-                  <span className="learn-more-container">
+                  <a
+                    className="learn-more-container"
+                    href="https://newsinitiative.withgoogle.com/resources/trainings/google-fact-check-tools/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <LearnIcon fill1={"#66E3FF"} fill2={"#191A23"} />
                     <span className="learn-more">Learn more</span>
-                  </span>
+                  </a>
                 </div>
                 <FactCheck />
               </div>
               <div className="software-item s3">
                 <div className="software-left">
                   <span className="software-title t3">News API</span>
-                  <span className="learn-more-container">
+                  <a
+                    className="learn-more-container"
+                    href="https://newsapi.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <LearnIcon fill1={"#191A23"} fill2={"#FFFFFF"} />
-                    <span className="learn-more">Learn more</span>
-                  </span>
+                    <span className="learn-more l1">Learn more</span>
+                  </a>
                 </div>
                 <NewsIcon />
               </div>
@@ -84,10 +109,15 @@ export default function Home() {
                   <span className="software-title t4">
                     Natural Language Processing
                   </span>
-                  <span className="learn-more-container">
+                  <a
+                    className="learn-more-container"
+                    href="https://www.nltk.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <LearnIcon fill1={"#66E3FF"} fill2={"#191A23"} />
                     <span className="learn-more">Learn more</span>
-                  </span>
+                  </a>
                 </div>
                 <NLP />
               </div>
@@ -235,6 +265,31 @@ export default function Home() {
                 )}
               </div>
             </div>
+          </div>
+          <div className="contact-block">
+            <div className="contact-header">Contact us</div>
+            <div className="contact-body">
+              <form className="form" onSubmit={(e) => e.preventDefault()}>
+                <div className="input-container">
+                  <label>Name</label>
+                  <input className="input-contact" />
+                </div>
+                <div className="input-container">
+                  <label>Email</label>
+                  <input className="input-contact" />
+                </div>
+                <div className="input-container">
+                  <label>Message</label>
+                  <textarea className="input-message" />
+                </div>
+                <button className="submit-btn">Submit</button>
+              </form>
+              <ContactIcon />
+            </div>
+          </div>
+          <div className="footer-block">
+            <ContactLogos />
+            <span className="tempestmeow">Made by tempestmeow⚡</span>
           </div>
         </div>
       </div>

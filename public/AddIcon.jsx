@@ -7,6 +7,7 @@ export default function AddIcon({ setProblemToggle }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       onClick={() => setProblemToggle((prev) => !prev)}
+      className="toggle-icon"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
