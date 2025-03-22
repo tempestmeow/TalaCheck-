@@ -132,6 +132,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 80vh;
+  margin-top: 2rem;
 }
 
 .mission-left {
@@ -220,13 +221,13 @@ body {
 .software-header {
   font-size: 40px;
   font-weight: 650;
+  margin-left: 1rem;
 }
 
 .software-title {
   font-size: 25px;
   font-weight: 400;
   padding: 0.2rem;
-  background: linear-gradient(#83e8ff) no-repeat;
   width: fit-content;
   max-width: 250px;
   display: flex;
@@ -235,8 +236,8 @@ body {
 }
 
 .software-description {
-  font-size: 13px;
-  max-width: 400px;
+  font-size: 14px;
+  max-width: 450px;
   display: flex;
   align-items: center;
 }
@@ -258,11 +259,11 @@ body {
   .software-block-header {
     flex-direction: column;
   }
-}
 
-@media (max-width: 425px) {
-  .software-header {
-    font-size: clamp(25px, 3.5vw, 35px);
+  .software-header,
+  .problem-title {
+    margin-left: unset;
+    font-size: 36px;
   }
 }
 
@@ -314,4 +315,76 @@ body {
   .software-block-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* KEY ISSUES */
+
+.problem-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.problem-title {
+  font-size: 40px;
+  font-weight: 650;
+  margin-left: 1rem;
+}
+
+.problem-description {
+  font-size: 16px;
+  padding-top: 4px;
+}
+
+.problem-point {
+  font-size: 25px;
+  font-weight: 550;
+  padding: 0.2rem;
+  width: fit-content;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.problem-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.problem-item {
+  width: 100%;
+  padding: 2rem 4rem;
+  background-color: #f3f3f3;
+  box-shadow: 0 5px 0px 0 #191a23;
+  border: 1px solid #191a23;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.problem-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.problem-toggled {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #191a23;
+}
+.problem-number {
+  font-size: 50px;
+}
+
+.problem-left {
+  display: flex;
+  gap: 2rem;
 }
