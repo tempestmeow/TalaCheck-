@@ -120,7 +120,6 @@ body {
 .body {
   display: flex;
   flex-direction: column;
-  padding: 0rem 1.5rem;
   width: 100%;
   max-width: 100%;
 }
@@ -205,6 +204,7 @@ body {
 /* SOFTWARE */
 
 .software-block {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -217,8 +217,14 @@ body {
   gap: 1rem;
 }
 
+.software-header {
+  font-size: 35px;
+  font-weight: 650;
+}
+
 .software-title {
-  font-size: 32px;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .software-description {
@@ -238,7 +244,8 @@ body {
 .software-left {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
+  max-width: 300px;
+  justify-content: space-between;
 }
 
 @media (max-width: 450px) {
@@ -255,8 +262,14 @@ body {
 
 .software-block-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, clamp(500px, 60vw, 600px));
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
   row-gap: 1rem;
+  gap: 3rem;
+}
+
+.s1 {
+  padding: 2rem;
+  background-color: #f3f3f3;
 }
