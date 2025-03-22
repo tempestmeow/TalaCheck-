@@ -3,6 +3,10 @@ import "./global.css";
 import Header from "@/components/Header";
 import OCR from "@/public/OCR";
 import MissionIcon from "@/public/MissionIcon";
+import LearnIcon from "@/public/LearnIcon";
+import FactCheck from "@/public/FactCheck";
+import NewsIcon from "@/public/NewsIcon";
+import NLP from "@/public/NLP";
 export default function Home() {
   return (
     <>
@@ -35,17 +39,47 @@ export default function Home() {
             <div className="software-block-grid">
               <div className="software-item s1">
                 <div className="software-left">
-                  <span className="software-title ">
+                  <span className="software-title t1">
                     Optical Character Recognition
                   </span>
-                  <span className="learn-more">Learn more</span>
+                  <span className="learn-more-container">
+                    <LearnIcon fill1={"#66E3FF"} fill2={"#191A23"} />
+                    <span className="learn-more">Learn more</span>
+                  </span>
                 </div>
                 <OCR />
               </div>
-              <div className="software-item s2">Fact-Checking API</div>
-              <div className="software-item s3">News API</div>
+              <div className="software-item s2">
+                <div className="software-left">
+                  <span className="software-title t2">Fact-Checking API</span>
+                  <span className="learn-more-container">
+                    <LearnIcon fill1={"#66E3FF"} fill2={"#191A23"} />
+                    <span className="learn-more">Learn more</span>
+                  </span>
+                </div>
+                <FactCheck />
+              </div>
+              <div className="software-item s3">
+                <div className="software-left">
+                  <span className="software-title t3">News API</span>
+                  <span className="learn-more-container">
+                    <LearnIcon fill1={"#191A23"} fill2={"#FFFFFF"} />
+                    <span className="learn-more">Learn more</span>
+                  </span>
+                </div>
+                <NewsIcon />
+              </div>
               <div className="software-item s4">
-                Natural Language Processing
+                <div className="software-left">
+                  <span className="software-title t4">
+                    Natural Language Processing
+                  </span>
+                  <span className="learn-more-container">
+                    <LearnIcon fill1={"#66E3FF"} fill2={"#191A23"} />
+                    <span className="learn-more">Learn more</span>
+                  </span>
+                </div>
+                <NLP />
               </div>
             </div>
           </div>
