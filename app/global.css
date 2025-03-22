@@ -96,7 +96,7 @@ body {
 
 @media (max-width: 450px) {
   .header-item {
-    font-size: 16px;
+    font-size: 3vw;
   }
 
   .header-left {
@@ -121,7 +121,6 @@ body {
   }
 
   .header-right {
-    font-size: 3vw;
     transform: translateX(-20px);
   }
 }
