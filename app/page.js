@@ -1,5 +1,5 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import React from "react";
 import { useState, useRef } from "react";
 import "./global.css";
@@ -16,6 +16,7 @@ import ContactIcon from "@/public/ContactIcon";
 import ContactLogos from "@/public/ContactLogos";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
 export default function Home() {
+  const router = useRouter();
   const [problemToggle1, setProblemToggle1] = useState(false);
   const [problemToggle2, setProblemToggle2] = useState(false);
   const [problemToggle3, setProblemToggle3] = useState(false);
@@ -44,7 +45,12 @@ export default function Home() {
                 users verify information and identify misinformation in the
                 Philippines.
               </span>
-              <span className="mission-link">Try our site</span>
+              <span
+                className="mission-link"
+                onClick={() => router.push("/app")}
+              >
+                Try our site
+              </span>
             </div>
             <MissionIcon className={"mission-icon"} />
           </div>
