@@ -217,6 +217,39 @@ body {
   background-color: black;
   width: max-content;
   border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+
+.header-software,
+.header-mission,
+.header-about {
+  padding-bottom: 0.4rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.header-software::after,
+.header-mission::after,
+.header-about::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #39393a;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.header-software:hover::after,
+.header-mission:hover::after,
+.header-about:hover::after {
+  width: 100%;
+}
+
+.mission-link:hover {
+  transform: scale(1.05);
 }
 
 /* SOFTWARE */

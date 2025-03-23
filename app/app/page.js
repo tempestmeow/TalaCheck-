@@ -1129,7 +1129,9 @@ export default function FactCheckerPage() {
 
       <div className="upload-card slide-up">
         <div className="section">
-          <h2 className="section-title">Upload Image</h2>
+          <h2 className="section-title">
+            Upload Image (This is still a prototype)
+          </h2>
           <div className="action-row">
             <label className="button-primary" htmlFor="image-upload">
               Select Image
