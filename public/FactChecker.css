@@ -1,0 +1,94 @@
+.ocr-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.ocr-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.ocr-upload {
+  margin-bottom: 1.5rem;
+}
+
+.ocr-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.ocr-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ocr-preview {
+  margin-bottom: 1.5rem;
+}
+
+.ocr-preview-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.ocr-preview-image {
+  max-height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.ocr-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #2563eb;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ocr-button:hover {
+  background-color: #1e40af;
+}
+
+.ocr-button.disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.ocr-error {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #f87171;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-radius: 6px;
+}
+
+.ocr-result {
+  margin-top: 2rem;
+}
+
+.ocr-result-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.ocr-result-box {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  white-space: pre-wrap;
+}
