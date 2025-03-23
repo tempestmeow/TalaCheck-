@@ -35,6 +35,10 @@ body {
   white-space: nowrap;
   width: 100%;
   gap: 2rem;
+
+  @media (max-width: 450px) {
+    gap: 2.2rem;
+  }
 }
 
 .header-left {
@@ -90,7 +94,7 @@ body {
 @media (max-width: 500px) {
   .header {
     margin-left: -1.5rem;
-    margin-right: -2rem;
+    margin-right: -1.5rem;
   }
 }
 
