@@ -223,6 +223,7 @@ body {
 .header-software,
 .header-mission,
 .header-about {
+  padding-top: 0.4rem;
   padding-bottom: 0.4rem;
   cursor: pointer;
   position: relative;
@@ -240,12 +241,13 @@ body {
   background-color: #39393a;
   transition: width 0.3s ease, left 0.3s ease;
   transform: translateX(-50%);
+  border-radius: 50px;
 }
 
 .header-software:hover::after,
 .header-mission:hover::after,
 .header-about:hover::after {
-  width: 100%;
+  width: 90%;
 }
 
 .mission-link:hover {
