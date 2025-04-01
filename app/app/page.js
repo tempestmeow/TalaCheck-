@@ -1204,13 +1204,17 @@ export default function FactCheckerPage() {
             <div className={`verdict-banner ${factCheckResult.verdict}`}>
               <span className="verdict-text">
                 {factCheckResult.verdict === "factual"
-                  ? "Likely True"
+                  ? "Factual"
                   : factCheckResult.verdict === "not factual"
-                  ? "Likely False"
+                  ? "Unverified"
                   : "Uncertain"}
               </span>
               <span className="confidence">
-                Confidence: {Math.round(factCheckResult.confidence * 100)}%
+                {factCheckResult.verdict === "factual"
+                  ? `Confidence:  ${Math.round(
+                      factCheckResult.confidence * 100
+                    )}%`
+                  : "Unable to verify"}
               </span>
             </div>
 
