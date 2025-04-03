@@ -6,8 +6,12 @@ import "../global.css";
 
 const TRUSTED_SOURCES = [
   {
-    name: "USA TODAY",
-    url: "https://www.usatoday.com/story/sports/nba/spurs/2025/03/13/deaaron-fox-injury-update-spurs/82382032007/",
+    name: "RAPPLER",
+    url: "https://www.rappler.com/philippines/elections/certificate-candidacy-filing-highlights-day-2-senator-party-list-october-2024/",
+  },
+  {
+    name: "PHILSTAR",
+    url: "https://www.philstar.com/lifestyle/food-and-leisure/2024/10/02/2389641/unli-pares-congress-diwata-files-coc-vendors-partylist-4th-nominee?fbclid=IwY2xjawJbVjxleHRuA2FlbQIxMAABHSIjOlzrW4-eTX5JmRAUVUOt09xcaTwPlVnYzgMZbJ2-ce0aZy0GDmRprQ_aem_l7RAm6vI-RDdLzivdARAmw",
   },
   {
     name: "ABS-CBN",
@@ -16,6 +20,10 @@ const TRUSTED_SOURCES = [
   {
     name: "RAPPLER",
     url: "https://www.rappler.com/philippines/bato-dela-rosa-plea-escudero-do-not-surrender-icc-arrest-out/?fbclid=IwY2xjawJMU2FleHRuA2FlbQIxMAABHQgQ-Eg0zS8r56QAKYQ5k2v7bNIb1tCUcdT75vtqzLQ57jawwmsPhnLqQg_aem_UQgJu7CBH8BjiyiFbtVjwg",
+  },
+  {
+    name: "ABS-CBN",
+    url: "https://www.abs-cbn.com/entertainment/2024/10/2/-unli-rice-at-batasan-pares-sensation-diwata-seeks-congressional-seat-1451",
   },
 ];
 
