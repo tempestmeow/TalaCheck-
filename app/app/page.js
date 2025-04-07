@@ -25,6 +25,22 @@ const TRUSTED_SOURCES = [
     name: "ABS-CBN",
     url: "https://www.abs-cbn.com/entertainment/2024/10/2/-unli-rice-at-batasan-pares-sensation-diwata-seeks-congressional-seat-1451",
   },
+  {
+    name: "DailyTribue",
+    url: "https://tribune.net.ph/2024/10/02/diwata-cooks-up-change-files-coc",
+  },
+  {
+    name: "RAPPLER",
+    url: "https://www.rappler.com/philippines/mindanao/comelec-orders-misamis-oriental-governor-peter-unabia-explain-hate-speech-sexist-joke/",
+  },
+  {
+    name: "INQUIRER",
+    url: "https://www.inquirer.net/435327/moros-decry-racist-slur-by-governor/",
+  },
+  {
+    name: "PHILSTAR",
+    url: "https://www.philstar.com/nation/2025/04/07/2434153/barmm-calls-out-misamis-governor-over-discriminatory-remarks-against-muslims",
+  },
 ];
 
 const SOURCE_CACHE = {};
