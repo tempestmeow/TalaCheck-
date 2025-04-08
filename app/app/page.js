@@ -1,51 +1,40 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 import { useState, useEffect } from "react";
 import Tesseract from "tesseract.js";
 import "../global.css";
 
 const TRUSTED_SOURCES = [
   {
-    name: "RAPPLER",
-    url: "https://www.rappler.com/philippines/elections/certificate-candidacy-filing-highlights-day-2-senator-party-list-october-2024/",
-  },
-  {
     name: "PHILSTAR",
     url: "https://www.philstar.com/lifestyle/food-and-leisure/2024/10/02/2389641/unli-pares-congress-diwata-files-coc-vendors-partylist-4th-nominee?fbclid=IwY2xjawJbVjxleHRuA2FlbQIxMAABHSIjOlzrW4-eTX5JmRAUVUOt09xcaTwPlVnYzgMZbJ2-ce0aZy0GDmRprQ_aem_l7RAm6vI-RDdLzivdARAmw",
   },
-  {
-    name: "ABS-CBN",
-    url: "https://www.abs-cbn.com/news/nation/2025/3/10/security-presence-around-rodrigo-duterte-s-hong-kong-hotel-amid-icc-warrant-concerns-1726?fbclid=IwY2xjawJMUgNleHRuA2FlbQIxMAABHc9KEgt_07eXMU__XAw-mH2JHO5TzaMYcbgFMQa-F6Vhwtmu_ruqknrfpQ_aem_LoWzk3-L1mOZ-JonzhqYsQ",
-  },
-  {
-    name: "RAPPLER",
-    url: "https://www.rappler.com/philippines/bato-dela-rosa-plea-escudero-do-not-surrender-icc-arrest-out/?fbclid=IwY2xjawJMU2FleHRuA2FlbQIxMAABHQgQ-Eg0zS8r56QAKYQ5k2v7bNIb1tCUcdT75vtqzLQ57jawwmsPhnLqQg_aem_UQgJu7CBH8BjiyiFbtVjwg",
-  },
-  {
-    name: "ABS-CBN",
-    url: "https://www.abs-cbn.com/entertainment/2024/10/2/-unli-rice-at-batasan-pares-sensation-diwata-seeks-congressional-seat-1451",
-  },
-  {
-    name: "DailyTribue",
-    url: "https://tribune.net.ph/2024/10/02/diwata-cooks-up-change-files-coc",
-  },
+
   {
     name: "RAPPLER",
     url: "https://www.rappler.com/philippines/mindanao/comelec-orders-misamis-oriental-governor-peter-unabia-explain-hate-speech-sexist-joke/",
   },
   {
-    name: "INQUIRER",
-    url: "https://www.inquirer.net/435327/moros-decry-racist-slur-by-governor/",
+    name: "GMA",
+    url: "https://www.gmanetwork.com/news/topstories/nation/941890/comelec-orders-misamis-oriental-gov-unabia-to-explain-campaign-remarks/story/",
   },
   {
-    name: "PHILSTAR",
-    url: "https://www.philstar.com/nation/2025/04/07/2434153/barmm-calls-out-misamis-governor-over-discriminatory-remarks-against-muslims",
+    name: "ABS-CBN",
+    url: "https://www.inquirer.net/415052/famed-pares-vendor-acquires-taste-for-politics/",
+  },
+  {
+    name: "DZRH",
+    url: "https://www.dzrh.com.ph/post/social-media-personality-diwata-files-coc-eyes-seat-in-congress",
   },
 ];
 
 const SOURCE_CACHE = {};
 
 export default function FactCheckerPage() {
+  const router = useRouter();
+
   const [image, setImage] = useState(null);
   const [preview, setPreview] = useState(null);
   const [ocrText, setOcrText] = useState("");
@@ -1149,7 +1138,12 @@ export default function FactCheckerPage() {
 
   return (
     <div className="fact-checker-container">
-      <h1 className="page-title fade-in">TalaCheck</h1>
+      <h1
+        className="page-title cursor-pointer fade-in"
+        onClick={() => router.push("/")}
+      >
+        TalaCheck
+      </h1>
 
       <div className="upload-card slide-up">
         <div className="section">
