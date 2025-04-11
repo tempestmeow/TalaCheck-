@@ -1148,7 +1148,7 @@ export default function FactCheckerPage() {
       <div className="upload-card slide-up">
         <div className="section">
           <h2 className="section-title">
-            Upload Image (This is still a prototype)
+            Upload Image (Updating, server not available)
           </h2>
           <div className="action-row">
             <label className="button-primary" htmlFor="image-upload">
@@ -1162,11 +1162,11 @@ export default function FactCheckerPage() {
               className="hidden-input"
             />
             <button
-              onClick={processImage}
-              disabled={!image || loading}
-              className={
-                !image || loading ? "button-disabled" : "button-primary"
-              }
+            // onClick={processImage}
+            // disabled={!image || loading}
+            // className={
+            //   !image || loading ? "button-disabled" : "button-primary"
+            // }
             >
               {loading ? "Processing..." : "Extract Text"}
             </button>
