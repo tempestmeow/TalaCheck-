@@ -1162,11 +1162,11 @@ export default function FactCheckerPage() {
               className="hidden-input"
             />
             <button
-            // onClick={processImage}
-            // disabled={!image || loading}
-            // className={
-            //   !image || loading ? "button-disabled" : "button-primary"
-            // }
+              // onClick={processImage}
+              // disabled={!image || loading}
+              className={
+                !image || loading ? "button-disabled" : "button-primary"
+              }
             >
               {loading ? "Processing..." : "Extract Text"}
             </button>
